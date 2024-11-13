@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f8fa;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  width: 90%;
+  max-width: 1200px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #4a90e2;
+  margin-bottom: 15px;
+}
+
+.header h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.job-title {
+  font-size: 16px;
+  color: #777;
+}
+
+.info-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #f0f4f8;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.about,
+.personal-info {
+  text-align: justify;
+}
+
+.personal-info table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+.personal-info td {
+  padding: 8px 5px;
+  vertical-align: top;
+}
+
+.personal-info td:first-child {
+  font-weight: bold;
+  color: #333;
+  width: 25%;
+}
+
+.experiences {
+  text-align: justify;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.experience-item {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.experience-item img {
+  width: 40%;
+  height: 30%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-links a img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .info-container {
+    flex-direction: column;
+  }
+}
